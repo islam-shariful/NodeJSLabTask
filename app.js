@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/admin", admin.routes);
 app.use("/login", login.routes);
-app.use("/employee", employee.routes);
+app.use("/Employee", employee.routes);
 
 app.listen(3000);
