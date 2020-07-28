@@ -12,7 +12,11 @@ router.post("/", (req, res) => {
   info.push({ name: req.body.uname, password: req.body.password });
   console.log("Name: " + info[0].name);
   console.log("Password: " + info[0].password);
-  res.redirect("/login");
+  if (info[0].name == "admin") {
+    res.redirect("/admin");
+  } else {
+    res.redirect("/login");
+  }
 });
 
 exports.routes = router;
