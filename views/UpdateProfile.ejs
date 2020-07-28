@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee update profile</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Employee -> Employee update profile</legend>
+        <table border="1px">
+          <tr>
+            <th><label for="">Employee ID</label></th>
+            <th><label for="">Employee Name</label></th>
+            <th><label for="">Employee Phone</label></th>
+            <th><label for="">Employee Gender</label></th>
+            <th><label for="">Employee Designation</label></th>
+            <th><label for="">Action</label></th>
+          </tr>
+          <tr>
+            <td><%= id %></td>
+            <td><%= name %></td>
+            <td><%= phone %></td>
+            <td><%= gender %></td>
+            <td><%= designation %></td>
+            <td>
+              <a href="">Update</a>&nbsp;
+              <a href="">Delete</a>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
