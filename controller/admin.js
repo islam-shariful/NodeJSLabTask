@@ -21,8 +21,8 @@ router.get("/addEmployee", function (req, res) {
   res.render("addEmployee");
 });
 
-// router.get('/allEmployeelist', function(req, res) {
-//     res.render('allEmployeelist');
-// });
+router.get("/allEmployeeList", function (req, res) {
+  res.render("allEmployeeList");
+});
 
 exports.routes = router;
